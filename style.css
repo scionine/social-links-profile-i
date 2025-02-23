@@ -1,0 +1,160 @@
+/* Font Styles */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: Inter;
+}
+
+/* Base */
+html {
+  height: 100dvh;
+}
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(0, 0%, 8%);
+  font-size: 14px;
+}
+
+body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: hsl(0, 0%, 12%);
+  color: white;
+}
+
+/* Typography */
+h1 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 14px;
+  text-align: center;
+  color: hsl(75, 94%, 57%);
+}
+
+.home-content {
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-content p {
+  padding-bottom: 10px;
+}
+
+/* Container */
+.name-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Links */
+.social-links a {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  color: white;
+  border-radius: 7px;
+  padding: 13px;
+  margin: 14px;
+  width: 300px;
+  background: hsl(0, 0%, 20%);
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  color: hsl(0, 0%, 8%);
+  background: hsl(75, 94%, 57%);
+}
+
+/* Images */
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.avatar-container img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 1rem;
+  width: 100px;
+}
+
+/* Attribution */
+.attribution {
+  color: darkgray;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: -5%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  text-decoration: underline;
+  color: rgb(122, 86, 154);
+}
+
+/* For Mobile Screens */
+@media (max-width: 400px) {
+  body {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .social-links a {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 13px;
+  }
+
+  .avatar-container img {
+    width: 80px;
+  }
+
+  .attribution {
+    position: relative;
+    bottom: 0;
+    margin-top: 15px;
+  }
+}
